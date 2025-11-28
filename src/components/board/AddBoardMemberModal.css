@@ -1,0 +1,53 @@
+.add-board-member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-board-member-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-board-member-form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.add-board-member-form__info {
+  background-color: var(--surface-secondary);
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--primary);
+}
+
+.add-board-member-form__info h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.add-board-member-form__info ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.add-board-member-form__info li {
+  margin-bottom: 0.25rem;
+}
+
+.add-board-member-form__info strong {
+  color: var(--text-primary);
+}
+
+.add-board-member-form__note {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-style: italic;
+}

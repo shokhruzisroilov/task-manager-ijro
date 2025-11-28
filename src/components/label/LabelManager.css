@@ -1,0 +1,52 @@
+.label-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.label-manager__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-manager__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text, #172b4d);
+  margin: 0;
+}
+
+.label-manager__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.label-manager__item {
+  cursor: pointer;
+}
+
+.label-manager__empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-text-secondary, #5e6c84);
+  background-color: var(--color-secondary, #f4f5f7);
+  border-radius: 4px;
+}
+
+.label-manager__empty p {
+  margin: 0;
+}
+
+.label-manager__loading,
+.label-manager__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.label-manager__error {
+  color: var(--color-danger, #eb5a46);
+}

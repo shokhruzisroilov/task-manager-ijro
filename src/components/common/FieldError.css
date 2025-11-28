@@ -1,0 +1,13 @@
+.field-error {
+  color: var(--color-danger, #dc2626);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.field-error::before {
+  content: '⚠';
+  font-size: 1rem;
+}

@@ -1,0 +1,59 @@
+.add-column-button {
+  width: 280px;
+  min-width: 280px;
+  flex-shrink: 0;
+}
+
+.add-column-button__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px dashed var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.add-column-button__trigger:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-color: var(--color-text-tertiary);
+  color: var(--color-text-primary);
+}
+
+.add-column-button__icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.add-column-button__text {
+  line-height: 1;
+}
+
+.add-column-button--form {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.add-column-button__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.add-column-button__input {
+  width: 100%;
+}
+
+.add-column-button__actions {
+  display: flex;
+  gap: 0.5rem;
+}

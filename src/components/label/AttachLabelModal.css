@@ -1,0 +1,90 @@
+.attach-label-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.attach-label-modal__loading,
+.attach-label-modal__error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.attach-label-modal__error {
+  color: var(--color-danger, #eb5a46);
+}
+
+.attach-label-modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.attach-label-modal__item {
+  width: 100%;
+}
+
+.attach-label-modal__button {
+  position: relative;
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-color: var(--color-secondary, #f4f5f7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attach-label-modal__button:hover:not(:disabled) {
+  background-color: var(--color-secondary-dark, #e4e6ea);
+  border-color: var(--color-primary, #0079bf);
+}
+
+.attach-label-modal__button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.attach-label-modal__button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.attach-label-modal__button--attached {
+  border-color: var(--color-primary, #0079bf);
+  background-color: var(--color-primary-light, #e4f0f6);
+}
+
+.attach-label-modal__check {
+  margin-left: auto;
+  color: var(--color-primary, #0079bf);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.attach-label-modal__spinner {
+  margin-left: auto;
+}
+
+.attach-label-modal__empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--color-text-secondary, #5e6c84);
+  background-color: var(--color-secondary, #f4f5f7);
+  border-radius: 4px;
+}
+
+.attach-label-modal__empty p {
+  margin: 0;
+}
+
+.attach-label-modal__footer {
+  margin-top: 8px;
+}

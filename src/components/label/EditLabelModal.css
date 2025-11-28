@@ -1,0 +1,27 @@
+.edit-label-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Reuse styles from CreateLabelModal */
+.edit-label-form .form-group,
+.edit-label-form .form-label,
+.edit-label-form .color-picker,
+.edit-label-form .color-option,
+.edit-label-form .color-option:hover,
+.edit-label-form .color-option:focus-visible,
+.edit-label-form .color-option--selected,
+.edit-label-form .color-option__check,
+.edit-label-form .label-preview,
+.edit-label-form .label-preview__item {
+  /* Styles inherited from CreateLabelModal.css */
+}
+
+.edit-label-form .modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}

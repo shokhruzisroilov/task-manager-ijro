@@ -1,0 +1,66 @@
+.board-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--color-background);
+}
+
+.board-view__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #dfe1e6;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+  .board-view__navbar {
+    padding: 16px 24px;
+  }
+}
+
+.board-view__content {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: var(--spacing-md);
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .board-view__content {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .board-view__content {
+    padding: var(--spacing-xl);
+  }
+}
+
+.board-view__loading,
+.board-view__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.board-view__error h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.board-view__error p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+}

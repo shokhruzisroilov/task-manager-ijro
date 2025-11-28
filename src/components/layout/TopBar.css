@@ -1,0 +1,69 @@
+/* TopBar Component Styles - Mobile First */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: var(--color-surface, #ffffff);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 0 var(--container-padding);
+  z-index: 100;
+}
+
+.topbar__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.topbar__menu-button:hover {
+  background-color: var(--color-background-secondary);
+}
+
+.topbar__menu-icon {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text-primary);
+}
+
+.topbar__title {
+  flex: 1;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .topbar__title {
+    font-size: var(--font-size-xl);
+  }
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Hide menu button on tablet and desktop */
+@media (min-width: 768px) {
+  .topbar__menu-button {
+    display: none;
+  }
+}

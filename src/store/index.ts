@@ -1,13 +1,7 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import generelReducer from './slices/generelSlice'
-const reducers = combineReducers({
-	generel: generelReducer,
-})
-
-export default configureStore({
-	reducer: reducers,
-})
-export const store = configureStore({
-	reducer: reducers,
-})
-export type RootState = ReturnType<typeof store.getState>
+/**
+ * Store exports
+ * Central export point for all Zustand stores
+ */
+export { useAuthStore } from './auth.store';
+export { useUIStore, toast } from './ui.store';
+export type { Toast } from './ui.store';

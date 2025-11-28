@@ -1,0 +1,31 @@
+.file-upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary, #0066cc);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.file-upload-button:hover:not(:disabled) {
+  background-color: var(--color-primary-dark, #0052a3);
+}
+
+.file-upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-upload-button__icon {
+  flex-shrink: 0;
+}
+
+.file-upload-button__input {
+  display: none;
+}

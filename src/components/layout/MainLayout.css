@@ -1,0 +1,28 @@
+/* MainLayout Component Styles - Mobile First */
+
+.main-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-layout__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Tablet and Desktop: Account for sidebar */
+@media (min-width: 768px) {
+  .main-layout__content {
+    margin-left: var(--sidebar-width);
+  }
+}
+
+.main-layout__main {
+  flex: 1;
+  overflow: auto;
+  background-color: var(--color-background);
+}

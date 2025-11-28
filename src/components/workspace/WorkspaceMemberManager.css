@@ -1,0 +1,110 @@
+.workspace-member-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.workspace-member-manager__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.workspace-member-manager__no-permission {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--hover);
+  border-radius: 8px;
+}
+
+.workspace-member-manager__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.workspace-member-manager__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.workspace-member-manager__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.workspace-member-manager__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.workspace-member-manager__name {
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workspace-member-manager__you-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.workspace-member-manager__email {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.workspace-member-manager__joined {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.workspace-member-manager__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.workspace-member-manager__role-badge {
+  padding: 0.5rem 1rem;
+  background-color: var(--hover);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .workspace-member-manager__item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .workspace-member-manager__actions {
+    justify-content: flex-end;
+  }
+}

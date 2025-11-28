@@ -1,0 +1,284 @@
+.card-modal {
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-modal__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.card-modal__content {
+  padding: 20px;
+}
+
+.card-modal__section {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.card-modal__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.card-modal__section-content {
+  flex: 1;
+}
+
+.card-modal__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #172b4d;
+  margin: 0 0 8px 0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.card-modal__title:hover {
+  background: #f4f5f7;
+}
+
+.card-modal__title-input {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-modal__subtitle {
+  font-size: 14px;
+  color: #5e6c84;
+  margin: 0;
+}
+
+.card-modal__column-name {
+  font-weight: 500;
+  color: #172b4d;
+}
+
+.card-modal__main {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card-modal__left {
+  min-width: 0;
+}
+
+.card-modal__right {
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+.card-modal__section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.card-modal__section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #172b4d;
+  margin: 0;
+}
+
+.card-modal__members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-modal__member {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: #f4f5f7;
+  border-radius: 4px;
+}
+
+.card-modal__member-name {
+  font-size: 14px;
+  color: #172b4d;
+}
+
+.card-modal__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-modal__label {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+.card-modal__date-input {
+  padding: 8px 12px;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #172b4d;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.card-modal__date-input:hover {
+  border-color: #b3bac5;
+}
+
+.card-modal__date-input:focus {
+  outline: none;
+  border-color: #0079bf;
+}
+
+.card-modal__date-display {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #5e6c84;
+}
+
+.card-modal__description {
+  padding: 12px;
+  min-height: 80px;
+  background: #f4f5f7;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.card-modal__description:hover {
+  background: #ebecf0;
+}
+
+.card-modal__description-placeholder {
+  color: #5e6c84;
+  font-style: italic;
+  margin: 0;
+}
+
+.card-modal__description-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-modal__description-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card-modal__comments {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-modal__comment {
+  padding: 12px;
+  background: #f4f5f7;
+  border-radius: 4px;
+}
+
+.card-modal__comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-modal__comment-author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #172b4d;
+}
+
+.card-modal__comment-date {
+  font-size: 12px;
+  color: #5e6c84;
+}
+
+.card-modal__comment-text {
+  font-size: 14px;
+  color: #172b4d;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.card-modal__attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-modal__attachment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f4f5f7;
+  border-radius: 4px;
+}
+
+.card-modal__attachment-name {
+  font-size: 14px;
+  color: #172b4d;
+  font-weight: 500;
+}
+
+.card-modal__attachment-size {
+  font-size: 12px;
+  color: #5e6c84;
+}
+
+.card-modal__empty {
+  font-size: 14px;
+  color: #5e6c84;
+  font-style: italic;
+  margin: 0;
+}
+
+.card-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-modal__actions-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5e6c84;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-modal__action-button {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .card-modal__main {
+    grid-template-columns: 1fr;
+  }
+
+  .card-modal__right {
+    position: static;
+  }
+}

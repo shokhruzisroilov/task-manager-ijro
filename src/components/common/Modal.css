@@ -1,0 +1,119 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal {
+  background: linear-gradient(to bottom, #ffffff, #fafbfc);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.modal--sm {
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal--md {
+  width: 90%;
+  max-width: 600px;
+}
+
+.modal--lg {
+  width: 90%;
+  max-width: 900px;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #dfe1e6;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #172b4d;
+  letter-spacing: -0.01em;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: #5e6c84;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: all 200ms ease;
+}
+
+.modal__close:hover {
+  background-color: #f4f5f7;
+  color: #172b4d;
+}
+
+.modal__close:focus-visible {
+  outline: 2px solid #0079bf;
+  outline-offset: 2px;
+}
+
+.modal__content {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal__content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal__content::-webkit-scrollbar-track {
+  background: #f4f5f7;
+  border-radius: 4px;
+}
+
+.modal__content::-webkit-scrollbar-thumb {
+  background: #dfe1e6;
+  border-radius: 4px;
+}
+
+.modal__content::-webkit-scrollbar-thumb:hover {
+  background: #c1c7d0;
+}
+
+.modal__footer {
+  padding: 16px 24px;
+  border-top: 1px solid #dfe1e6;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  background: #fafbfc;
+  border-radius: 0 0 12px 12px;
+}

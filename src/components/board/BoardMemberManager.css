@@ -1,0 +1,128 @@
+.board-member-manager {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.board-member-manager__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.board-member-manager__header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.board-member-manager__no-permission {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.875rem;
+}
+
+.board-member-manager__empty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.board-member-manager__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.board-member-manager__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+.board-member-manager__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.board-member-manager__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.board-member-manager__name {
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.board-member-manager__you-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+}
+
+.board-member-manager__email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board-member-manager__joined {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+.board-member-manager__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.board-member-manager__role-badge {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+}
+
+.board-member-manager__role-badge--viewer {
+  color: var(--text-secondary);
+  background-color: var(--surface-secondary);
+}
+
+@media (max-width: 768px) {
+  .board-member-manager__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .board-member-manager__info {
+    width: 100%;
+  }
+
+  .board-member-manager__actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

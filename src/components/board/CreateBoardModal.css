@@ -1,0 +1,22 @@
+.create-board-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.create-board-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .create-board-modal__actions {
+    flex-direction: column-reverse;
+  }
+
+  .create-board-modal__actions button {
+    width: 100%;
+  }
+}

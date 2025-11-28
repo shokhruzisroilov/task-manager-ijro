@@ -1,0 +1,112 @@
+.add-member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-member-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-member-form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.add-member-form__note {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0.75rem;
+  background-color: var(--hover);
+  border-radius: 6px;
+}
+
+/* Selected User Display */
+.add-member-form__selected-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: var(--hover);
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+}
+
+.add-member-form__selected-user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.add-member-form__selected-user-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.add-member-form__selected-user-email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* User List */
+.add-member-form__user-list {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--background);
+}
+
+.add-member-form__user-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid var(--border);
+}
+
+.add-member-form__user-item:last-child {
+  border-bottom: none;
+}
+
+.add-member-form__user-item:hover {
+  background-color: var(--hover);
+}
+
+.add-member-form__user-item-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.add-member-form__user-item-name {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.add-member-form__user-item-email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.add-member-form__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  color: var(--text-secondary);
+}
+
+.add-member-form__no-results {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 0;
+}
