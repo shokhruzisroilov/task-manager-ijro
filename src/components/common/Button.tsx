@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { cn } from '../../utils/cn';
-import './Button.css';
+import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { cn } from '../../utils/cn'
+import './Button.css'
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
-  loading?: boolean;
-  fullWidth?: boolean;
-  icon?: React.ReactNode;
-  children: React.ReactNode;
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'danger' | 'ghost'
+  size?: 'sm' | 'md' | 'lg'
+  loading?: boolean
+  fullWidth?: boolean
+  icon?: React.ReactNode
+  children: React.ReactNode
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -24,28 +25,31 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   ...props
 }) => {
-  const [ripples, setRipples] = useState<Array<{ x: number; y: number; id: number }>>([]);
+  const [ripples, setRipples] = useState<
+    Array<{ x: number; y: number; id: number }>
+  >([])
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    if (disabled || loading) return;
+    if (disabled || loading) return
 
-    const button = e.currentTarget;
-    const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    const newRipple = { x, y, id: Date.now() };
-    setRipples(prev => [...prev, newRipple]);
-    
+    const button = e.currentTarget
+    const rect = button.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+
+    const newRipple = { x, y, id: Date.now() }
+    setRipples((prev) => [...prev, newRipple])
+
     setTimeout(() => {
-      setRipples(prev => prev.filter(r => r.id !== newRipple.id));
-    }, 600);
+      setRipples((prev) => prev.filter((r) => r.id !== newRipple.id))
+    }, 600)
 
-    onClick?.(e);
-  };
+    onClick?.(e)
+  }
 
   return (
     <motion.button
+      {...(props as any)}
       className={cn(
         'button',
         `button--${variant}`,
@@ -63,7 +67,7 @@ export const Button: React.FC<ButtonProps> = ({
       transition={{ duration: 0.15 }}
       {...props}
     >
-      {ripples.map(ripple => (
+      {ripples.map((ripple) => (
         <span
           key={ripple.id}
           className="button__ripple"
@@ -73,7 +77,7 @@ export const Button: React.FC<ButtonProps> = ({
           }}
         />
       ))}
-      
+
       {loading ? (
         <span className="button__spinner" aria-label="Loading">
           <motion.span
@@ -89,5 +93,5 @@ export const Button: React.FC<ButtonProps> = ({
         </>
       )}
     </motion.button>
-  );
-};
+  )
+}
